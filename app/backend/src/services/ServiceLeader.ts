@@ -28,4 +28,10 @@ export default class ServiceLeaderBoard {
     const leaderBoardSorted = ServiceLeaderBoard.sortLeaderBoard(leaderBoard);
     return { statusCode: 'SUCESSFULL', data: leaderBoardSorted };
   }
+
+  public async leaderBoardAway(): Promise<Response<ILeader[]>> {
+    const leaderBoard = await this.modelLeaderBoard.awayTeams();
+    const leaderBoardSorted = ServiceLeaderBoard.sortLeaderBoard(leaderBoard);
+    return { statusCode: 'SUCESSFULL', data: leaderBoardSorted };
+  }
 }

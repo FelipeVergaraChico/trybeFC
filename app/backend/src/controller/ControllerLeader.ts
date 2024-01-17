@@ -9,4 +9,9 @@ export default class ControllerLeaderBoard {
     const { statusCode, data } = await this.serviceLeaderBoard.homeTeams();
     res.status(httpStatus(statusCode)).json(data);
   }
+
+  public async leaderBoardAway(_req: Request, res: Response) {
+    const { statusCode, data } = await this.serviceLeaderBoard.leaderBoardAway();
+    res.status(httpStatus(statusCode)).json(data);
+  }
 }

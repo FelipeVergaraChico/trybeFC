@@ -9,7 +9,7 @@ const Schema = Joi.object({
   password: Joi.string().min(5).required(),
 });
 
-const SECRET_KEY = process.env.SECRET_KEY || 'teste';
+const JWT_SECRET = process.env.JWT_SECRET || 'jwt_secret';
 
 export default class ServiceUser {
   constructor(private modelUser = new ModelUser()) {}
@@ -23,7 +23,7 @@ export default class ServiceUser {
     }
     if (user && bcrypt.compareSync(password, user.password)) {
       const { username, role } = user;
-      const token = sign({ username, role, email: user.email }, SECRET_KEY);
+      const token = sign({ username, role, email: user.email }, JWT_SECRET);
       return { statusCode: 'SUCESSFULL', data: { token } };
     }
 

@@ -10,4 +10,9 @@ export default class ControllerLogin {
     const { statusCode, data } = await this.serviceLogin.login(email, password);
     res.status(httpStatus(statusCode)).json(data);
   }
+
+  static role(req: Request, res: Response) {
+    const { role } = req.body;
+    res.status(200).json({ role });
+  }
 }

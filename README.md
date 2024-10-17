@@ -11,15 +11,25 @@ O **Trybe FC** é uma aplicação full-stack, desenvolvida usando **TypeScript**
 ## Tecnologias Utilizadas
 
 **Docker**
+
 **Node**
+
 **TypeScript**
+
 **POO (Programação Orientada à Objetos)**
+
 **SOLID**
+
 **MySQL**
+
 **Sequelize**
+
 **JWT (Json Web Token)**
+
 **Bcryptjs**
+
 **Arquitetura de Software (MSC)**
+
 **Chai & Sinon**
 
 ## Instalação

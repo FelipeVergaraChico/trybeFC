@@ -61,6 +61,22 @@ Após a instalação, a aplicação estará disponível no navegador em `http://
 - Cadastrar novos jogos e times.
 - Gerenciar jogadores e resultados de partidas.
 
+Para ter permissões extras, como adicionar/editar partidas, precisa estar logado como Admin, então para isso basta clicar em <strong>Login</strong> no canto superior direito, e será redirecionado para a rota /login:
+
+
+
+Utilize o seguinte login para prover das permissões extras:
+
+
+  Login:
+  ```bash
+    Admin@admin.com
+  ``` 
+  Senha:
+  ```bash
+        secret_admin
+  ```
+
 ## Arquivos Distribuídos pela Trybe
 
 Alguns dos arquivos presentes neste repositório foram fornecidos pela [Trybe](https://www.betrybe.com/), como parte do currículo educacional, incluindo exemplos de configuração de banco de dados e estrutura de projeto.
